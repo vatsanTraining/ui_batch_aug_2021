@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/master.css">
+    <link rel="icon" href="images/Indian.png">
+    <title>Registration Page</title>
+    
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+<!-- Optional theme -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+    <style>
+
+@media print {
+            img {
+                display:none
+            }
+body { 
+font-size:10pt; 
+color: black; 
+} 
+        }
+        @media screen {
+            img {
+                width:100px;
+                height:100px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <section id="form_handler">
+        <header>
+            <h6>New User Registration Form</h6>
+        </header>
+        <section>
+            <nav>
+
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="review.html">Reviews</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </nav>
+        
+            <article>
+              <form action="index.html" method="get" class="form">
+               <div class="form-group">
+                  <label for="">FirstName</label>
+                  <input type="text" name="firstName" class="form-control" required placeholder="Enter the FirstName">
+                </div> 
+                <div class="form-group">
+                  <label for="">Last Name</label>
+                  <input type="text" name="lastName" class="form-group">
+                </div>
+                <div class="form-group">
+                  <label for="">Location</label>
+                  <select name="location" class="form-select">
+                      <option value="CHN">Chennai</option>
+                       <option value="BOM">Mumbai</option>
+                       <option value="SBC">Bengaluru</option>
+                       <option value="PNQ">Pune</option>
+                          </select>
+                        </div>
+                        <div class="form-group">
+                  <label for="">Meal Preference</label>
+                   <input type="radio" name="mealPref" value="veg"><label for="mealPref">Vegeterian</label>
+                    <input type="radio" name="mealPref" value="non-veg"><label for="mealPref">Non-Vegeterian</label>
+                    <input type="radio" name="mealPref" value="jain-veg"><label for="mealPref">Jain-Vegeterian</label>
+                </div>
+                    <label for="">Cuisine</label>
+                   <input type="checkbox" class="form-check" name="cuisine" value="italian"><label for="cuisine" class="form-check-label">Italian</label>
+                   <input type="checkbox" class="form-check" name="cuisine" value="mexican"><label for="Mexian" class="form-check-label">Vegeterian</label>
+                   <input type="checkbox" name="cuisine" value="indian">  <label for="Indian">Vegeterian</label>
+                
+                   <div class="form-group">
+                   <label for="">Date Of Birth</label> 
+                         <input type="date" name="dateOfBirth" class="form-control">
+                        </div>     
+                         <label for=""></label>
+                 <input type="email" name="email" class="form-group" multiple required placeholder="More than one email can be added [id1,id2]">
+                 <input type="reset" value="reset">
+                 <input type="submit" value="submit" class="btn btn-danger">
+                </form>
+            </article>
+            <aside>
+                <img src="images/foodDelivery.png" alt="Promotion Logo">
+            </aside>
+        </section>
+        <footer>
+            <p>Designed by Abc Consultants,Bangaluru</p>
+            <a href="mailTo:abc@plates.com">Contact</a>
+        </footer>
+    </section>
+
+</body>
+</html>

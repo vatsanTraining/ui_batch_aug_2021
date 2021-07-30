@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Box Model</title>
+	<link rel="stylesheet" href="">
+
+	<style>
+     section{
+
+     	width: 300px;
+     	height: 350px;
+     	border: 4px solid blue;
+     	margin-left: auto;
+     	margin-right: auto;
+     }
+        div{
+        margin-top: 25px;
+        margin-left: 50px;
+
+        width: 200px;
+     	height: 300px;
+     	border: 2px solid red;
+
+        }
+
+        img{
+        margin-left: 20px;
+        width: 50px;
+     	height: 50px;
+     	border: 3px solid orange;
+        }
+        p{
+
+        	border: 2px solid green;
+        }
+        #img1{
+
+        	padding-left: 20px; 
+        	margin-left: 20px;
+        }
+        #img2{
+
+        	padding-right: 20px;
+        }
+        #img3{
+            margin-left: -20px;
+            }        }
+	</style>
+</head>
+<body>
+     <h1 style="text-align: center;">Understanding Box Model</h1>
+   <section>
+	<div>
+         <img src="images/Indian.png" alt="Flag" id="indFlag">
+         <p>
+         <img src="images/Indian.png" alt="Flag"  id="img1">
+	     <img src="images/Us.png" alt="Flag" id="img2">
+		
+         </p>
+                 <p>
+         	     <img src="images/French.png" alt="Flag" id="img3">
+                </p>
+
+                <p>
+            <img src="images/Indian.png" alt="Flag" style="margin-left: 20px;" id="img3">
+	     <img src="images/Us.png" style="margin-left:-20px; " alt="Flag" id="img4">
+		
+         </p>
+         	</div>
+	     
+	</section>
+</body>
+</html>
