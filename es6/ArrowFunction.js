@@ -49,5 +49,7 @@ app.usingArrow =function(...values){
 // app.usingLet();
 // console.log("Result" +app.show(10));
 // app.usingRest(12,19,20,30);
-// app.usingSpread([10,20,30,40]);
-app.usingArrow(80,90,100,120);
+
+ var args =[20,30,40,50]
+ app.usingSpread(...args);
+//app.usingArrow(80,90,100,120);
