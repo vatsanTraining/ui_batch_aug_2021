@@ -5,8 +5,6 @@ function show(){
 
 var app={};
 
-
-
 app.attachEvents= function(){
 
 
@@ -20,3 +18,4 @@ app.attachEvents= function(){
 }
 
 app.attachEvents();
+show();
