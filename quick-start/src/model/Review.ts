@@ -7,3 +7,8 @@ export interface Props{
         review:Props;
       }
     
+
+    export interface ShowAllProp{
+            reviewList:Props[];
+          }
+        

@@ -5,6 +5,9 @@ import ShowFlag from './component/ShowFlag';
 import BannerComponent from './component/BannerComponent';
 import { Props } from './model/Review';
 import ShowReview from './component/ShowReviewComponent';
+import Counter from './component/ComponentWithUseStateHook';
+import { DisplayAllReviews } from './component/DisplayAllReviews';
+import FetchDataFromComponent from './component/FetchReviewUsingAxios';
 
 function App() {
 
@@ -15,9 +18,11 @@ function App() {
                return (
     <div className="App">
 
-      <ShowFlag countryName={'india'}></ShowFlag>
-      <BannerComponent title={'Menaka Cards'} subtitle={'Chennai'}/>
-      <ShowReview review={weddingCard}></ShowReview>
+      {/* <ShowFlag countryName={'india'}></ShowFlag>
+      <BannerComponent title={'Menaka Cards'} subtitle={'Chennai'}/> */}
+      {/* <ShowReview review={weddingCard}></ShowReview> */}
+      <Counter><h2>React Hooks Example</h2></Counter>
+      <FetchDataFromComponent></FetchDataFromComponent>
          </div>
   );
 }
