@@ -13,6 +13,7 @@ export default class ShowFlag extends Component<Country,State> {
     }
 
     handleClick = (event:React.MouseEvent<HTMLElement>)=>{
+            console.log(event.currentTarget.tagName);
                        this.setState({claps:this.state.claps+1})
    }
    
