@@ -8,6 +8,7 @@ import ShowReview from './component/ShowReviewComponent';
 import Counter from './component/ComponentWithUseStateHook';
 import { DisplayAllReviews } from './component/DisplayAllReviews';
 import FetchDataFromComponent from './component/FetchReviewUsingAxios';
+import AddReview from './component/AddReview';
 
 function App() {
 
@@ -21,8 +22,10 @@ function App() {
       {/* <ShowFlag countryName={'india'}></ShowFlag>
       <BannerComponent title={'Menaka Cards'} subtitle={'Chennai'}/> */}
       {/* <ShowReview review={weddingCard}></ShowReview> */}
-      <Counter><h2>React Hooks Example</h2></Counter>
-      <FetchDataFromComponent></FetchDataFromComponent>
+      {/* <Counter><h2>React Hooks Example</h2></Counter>
+      <FetchDataFromComponent></FetchDataFromComponent> */}
+      
+      <AddReview></AddReview>
          </div>
   );
 }
