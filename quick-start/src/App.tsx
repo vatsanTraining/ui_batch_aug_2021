@@ -9,6 +9,7 @@ import Counter from './component/ComponentWithUseStateHook';
 import { DisplayAllReviews } from './component/DisplayAllReviews';
 import FetchDataFromComponent from './component/FetchReviewUsingAxios';
 import AddReview from './component/AddReview';
+import { Application } from './component/Application';
 
 function App() {
 
@@ -25,7 +26,9 @@ function App() {
       {/* <Counter><h2>React Hooks Example</h2></Counter>
       <FetchDataFromComponent></FetchDataFromComponent> */}
       
-      <AddReview></AddReview>
+      {/* <AddReview></AddReview> */}
+   <Application></Application>
+
          </div>
   );
 }

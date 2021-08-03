@@ -1,6 +1,7 @@
 import React from "react";
 import { Props } from '../model/Review';
 import { useForm } from '../useFormHook';
+import axios from 'axios';
 
 
 function AddReview() {
@@ -17,6 +18,9 @@ function AddReview() {
         );
       function loginUserCallback() {
             console.log(values); // post to Backend
+    axios.post<Props>("http//localhost:8080/api/reviews",values).then(
+        result =>{console.log(result.data)} 
+    )
     }
     return (
                 <form onSubmit={onSubmit}>
